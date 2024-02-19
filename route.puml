@@ -1,0 +1,23 @@
+@startuml
+!define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
+!include osaPuml/Common.puml
+!include osaPuml/User/all.puml
+!include osaPuml/Hardware/all.puml
+!include osaPuml/Misc/all.puml
+!include osaPuml/Server/all.puml
+!include osaPuml/Site/all.puml
+
+together {
+osa_laptop(mac, "192.168.1.12", "Mac", "Mac")
+osa_device_wireless_router( router, "192.168.1.1", "Wifi" )
+osa_hub(hub, "192.168.0.1", "Hub")
+osa_hub(hub2, "83.238.248.19", "Hub")
+osa_server_web( web, "pudelek.pl", "www" )
+}
+
+mac -- router
+router -- hub
+hub -- hub2
+hub2 -- web
+
+@enduml

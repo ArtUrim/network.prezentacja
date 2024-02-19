@@ -1,0 +1,40 @@
+@startuml
+!define osaPuml https://raw.githubusercontent.com/Crashedmind/PlantUML-opensecurityarchitecture2-icons/master
+!include osaPuml/Common.puml
+!include osaPuml/User/all.puml
+!include osaPuml/Hardware/all.puml
+!include osaPuml/Misc/all.puml
+!include osaPuml/Server/all.puml
+!include osaPuml/Site/all.puml
+
+'. Mary is a Developer in the Product team. She has a Windows 10 PC and an Android phone.
+'. Bob is a Manager in the Accounts team. He has Mac and an iPhone.
+'. Ivan is an IT guy who looks after the server. 
+'. They connect to the network hub, and via a firewall to the Internet.
+
+together {
+osa_laptop(mac, "192.168.1.12", "Mac", "Mac")
+}
+
+together {
+osa_hub(hub, "Office hub", "Hub")
+}
+
+' Devices
+together {
+osa_desktop(pc, "dynamic", "Windows 10", "PC")
+osa_server(server, "192.168.1.100", "NAS", "Server")
+osa_printer( printer, "192.168.1.99", "LAN Printer", "Printer" )
+osa_mobile_pda( mobile, "dynamic", "Android", "mobile" )
+}
+
+
+mac --> hub : req
+hub --> pc : req
+hub --> server : req
+hub --> printer : req
+hub --> mobile : req
+printer --> hub: resp
+hub --> mac: resp
+
+@enduml

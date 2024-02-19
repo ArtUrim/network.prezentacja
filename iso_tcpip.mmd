@@ -1,0 +1,45 @@
+block-beta
+  columns 6
+
+  block:group1:2
+	  columns 1
+	  oapplication("Application layer")
+	  opresentation("Presentation layer")
+	  osession("Session layer")
+  end
+  application("Application layer"):2
+  uapplication("DNS DHCP HTTP"):2
+  otransport("Transport layer"):2
+  transport("Transport layer"):2
+  utransport("TCP TLS"):2
+  onetwork("Network layer"):2
+  internet("Internet layer"):2
+  uinternet("IP ICMP"):2
+  block:group2:2
+	  columns 1
+	  odata("Data link layer")
+	  ophysical("Physical layer")
+  end
+  link1("Link layer"):2
+  ulink1("MAC ARP"):2
+
+  style ophysical fill:#0ff
+  style odata fill:#0ee
+  style onetwork fill:#0dd
+  style otransport fill:#0cc
+  style osession fill:#0bb
+  style opresentation fill:#0aa
+  style oapplication fill:#099
+
+
+
+  style link1 fill:#0f0
+  style internet fill:#0e0
+  style transport fill:#0d0
+  style application fill:#0c0
+
+
+  style ulink1 fill:#ff0
+  style uinternet fill:#ee0
+  style utransport fill:#dd0
+  style uapplication fill:#cc0
