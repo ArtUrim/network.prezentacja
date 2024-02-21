@@ -32,7 +32,7 @@ wprowadzenie
 
 # ISO/OSI vs TCP/IP
 
-![bottom 50%](iso_tcpip.mmd.svg)
+![80%](iso_tcpip.mmd.png)
 
 ---
 
@@ -69,7 +69,7 @@ Globalny adres komputera w sieci (liczba 32bitowa)
 _xxx.yyy.vvv.zzz_
 
 Obecnie ilośc komputerów jest znacznie większa niż 4 miliardy
-Jak sobie z tyum poradzić?
+Jak sobie z tym poradzić?
 * IPv6
 * **N**etwork **A**ddress **T**ranslation
 
@@ -220,15 +220,15 @@ Jak sobie z tyum poradzić?
 
 # <!--fit--> Embedded (**LwM2M**)
 
-![70%](lwm2m.png)
+![50%](l2.png)
 
-Dedykowany do niskiego poboruy mocy
+Dedykowany do niskiego poboru mocy
 
 ---
 
 # <!--fit--> Embedded (**matter**)
 
-![70%](matter.png)
+![70%](m2.png)
 
 Standard _inteligentnego domu_
 
